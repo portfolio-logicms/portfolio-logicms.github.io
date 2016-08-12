@@ -1,0 +1,40 @@
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 40%;
+
+	.nav__item {
+		flex-grow: 1;
+		flex-basis: 0;
+
+		.current {
+			border-bottom: 1px solid $color-secondary;
+		}
+		a {
+			font-size: $components__nav-font-size;
+			color: $color-primary;
+			text-decoration: none;
+			padding: 0 5px 2px;
+
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+	}
+	.dropdown {
+		&:hover {
+			.drop-nav {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				position: absolute;
+			}
+		}
+	}
+	.drop-nav {
+		display: none;
+		margin: 0;
+		padding: 5px 0;
+	}
+}
