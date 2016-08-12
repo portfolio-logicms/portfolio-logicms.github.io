@@ -4,7 +4,7 @@
 	flex-wrap: nowrap;
 	width: 40%;
 
-	.nav__item {
+	@include e(item) {
 		flex-grow: 1;
 		flex-basis: 0;
 
@@ -31,10 +31,10 @@
 				position: absolute;
 			}
 		}
-	}
-	.drop-nav {
-		display: none;
-		margin: 0;
-		padding: 5px 0;
+		.drop-nav {
+			display: none;
+			margin: 0;
+			padding: 5px 0;
+		}
 	}
 }
