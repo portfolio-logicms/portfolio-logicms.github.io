@@ -1,41 +1,43 @@
 footer {
 	width: 100%;
 	height: auto;
-	background-color: $white;
+	background-color: $black;
 
 	.footer-inner {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		width: 90%;
+		align-items: center;
+		width: 80%;
 		margin: 0 auto;
-		color: $color-primary;
-	
+		color: $color-secondary;
+
 		@include e(contact) {
 			flex: 1;
-			margin-right: auto;
-			border: 1px dashed red;
+
+			a {
+				color: $color-secondary;
+				text-decoration: none;
+			}
 		}
 		@include e(logo) {
 			display: flex;
 			flex-direction: column;
 			flex: 1;
-			align-self: center;
-			border: 1px dashed red;
 
 			img {
-				width: 100px;
+				width: 40px;
 				margin: 0 auto;
 			}
 			p {
 				text-align: center;
+				margin: 5px 0;
 			}
 		}
 		@include e(registration) {
 			flex: 1;
-			border: 1px dashed red;
-			margin-left: auto;
+			text-align: right;
 		}
 	}
 }
