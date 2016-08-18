@@ -13,8 +13,11 @@ body {
 	line-height: $base__line-height;
 	font-family: $font-family--primary;
 	color: $color-primary;
+	letter-spacing: 1px;
 }
-.main-content {
+
+// sticky footer 
+.main-content, .contact-content, .services-content {
 	flex: 1;
 }
 ul {

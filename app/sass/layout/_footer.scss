@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
-	height: auto;
-	background-color: $black;
+	height: 130px;
+	background-color: #64ceff;
 
 	.footer-inner {
 		display: flex;
@@ -9,15 +9,16 @@ footer {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
-		margin: 0 auto;
-		color: $color-secondary;
+		width: 90%;
+		height: 100px;
+		margin: 20px auto 0;
+		color: $white;
 
 		@include e(contact) {
 			flex: 1;
 
 			a {
-				color: $color-secondary;
+				color: $white;;
 				text-decoration: none;
 			}
 		}
@@ -27,12 +28,13 @@ footer {
 			flex: 1;
 
 			img {
-				width: 40px;
+				width: 120px;
 				margin: 0 auto;
 			}
 			p {
+				font-size: 12px;
 				text-align: center;
-				margin: 5px 0;
+				margin: 10px 0;
 			}
 		}
 		@include e(registration) {

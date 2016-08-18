@@ -1,0 +1,25 @@
+.services-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 80%;
+
+	@include e(about) {
+		width: 50%;
+		margin-left:0%;
+	}
+	@include e(services) {
+		margin: 0 0 0 auto;
+
+		ul {
+			margin-left: 10px;
+
+			li:before {
+				content: "-";
+			}
+		}
+	}
+}
