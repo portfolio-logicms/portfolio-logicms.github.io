@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	height: 130px;
-	background-color: #64ceff;
+	background-color: $color-primary;
 
 	.footer-inner {
 		display: flex;
@@ -10,6 +10,7 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		width: 90%;
+		max-width: 1200px;
 		height: 100px;
 		margin: 20px auto 0;
 		color: $white;
@@ -18,7 +19,7 @@ footer {
 			flex: 1;
 
 			a {
-				color: $white;;
+				color: $white;
 				text-decoration: none;
 			}
 		}
@@ -28,7 +29,7 @@ footer {
 			flex: 1;
 
 			img {
-				width: 120px;
+				width: 40px;
 				margin: 0 auto;
 			}
 			p {

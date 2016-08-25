@@ -1,0 +1,62 @@
+.services-selector {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 60px;
+	color: $white;
+	background-color: $color-primary;
+	user-select: none;
+
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: $white;
+		margin: 0px auto;
+	}
+	img {
+		margin: 0 0 0 auto;
+		height: 30px;
+	}
+	h2 {
+		font-size: 18px;
+		margin: 10px auto 0 10px;
+		padding: 0;
+	}
+	@include e(commercial) {
+		flex: 1;
+		border-right: 5px solid $white;
+	}
+	@include e(domestic) {
+		flex: 1;
+	}
+}
+
+.home-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	width: 90%;
+	max-width: 1200px;
+	margin: 50px auto;
+
+	.main-content {
+		flex: 3;
+		 
+		 h1 {
+		 	margin: 0;
+		 }
+		 p {
+		 	margin: 1em 2em 1em 0;
+		 }
+	}
+	.side-content {
+		flex: 1;
+
+		img{
+			width: 100%;
+		}
+	}
+}

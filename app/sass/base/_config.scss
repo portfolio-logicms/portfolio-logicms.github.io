@@ -22,6 +22,7 @@ $black		: #000;
 
 $prussian-blue	: #002749;
 $cerulean		: #00aeea;
+$malibu			: #64ceff;
 
 
 		/* ^^ name that color tool kit */
@@ -30,6 +31,7 @@ $cerulean		: #00aeea;
 
 $color-primary		: $prussian-blue;
 $color-secondary	: $cerulean;
+$color-footer		: $malibu;
 
 // Text
 
@@ -37,7 +39,3 @@ $base__font-size	:16px;
 $base__line-height	:1.5;
 
 $components__nav-font-size: 14px;
-
-// Path to Assets
-
-$path--rel	: "../../assets";
