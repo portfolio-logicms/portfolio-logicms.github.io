@@ -10,67 +10,81 @@
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.cycle2.min.js"></script>
 	<script type="text/javascript" src="./js/load.js"></script>
+	<script type="text/javascript" src="./js/navigation.js"></script>
 </head>
 <body>
-	<div class="loader"></div><!--Counter page reflow-->
-	<header>
-		<a href="./index.html" class="nav-logo"><img src="./assets/i__logic-ms-logo.png" alt=""></a>
-		<ul class="main-nav">
-			<li class="main-nav__item"><a href="./index.html" class="current">Home</a></li>
-			<li class="main-nav__item"><a href="./about.html">About</a></li>
-			<li class="main-nav__item dropdown">
-				<a href="#">Services</a>
-				<ul class="drop-nav">
-					<li><a href="./commercial-services.html">Commercial</a></li>
-					<li><a href="./domestic-services.html">Domestic</a></li>
-				</ul>
-			</li>
-			<li class="main-nav__item"><a href="./contact.html">Contact</a></li>
-		</ul>
-	</header>
 
-	<div class="cycle-slideshow">
-		<span class="cycle-prev">&#9001;</span>
-		<span class="cycle-next">&#9002;</span>
-		<span class="cycle-pager"></span>
-		<img src="./assets/i__slider1.jpg" alt="commercial plumbing image description">
-		<img src="./assets/i__slider2.jpg" alt="commercial plumbing image description">
-		<img src="./assets/i__slider3.jpeg" alt="commercial plumbing image description">
-	</div>
+<div class="page-wrapper">
+		<div class="loader"></div><!--Counter page reflow-->
+		<header>
+			<a href="#" class="mobile-nav-button">
+			  <span class="mobile-nav-icon">
+			    <span></span>
+			  </span>
+			</a>
+			<a href="./index.html" class="nav-logo"><img src="./assets/i__logic-ms-logo.png" alt=""></a>
+			<ul class="main-nav">
+				<li class="main-nav__item"><a href="./index.html" class="current">Home</a></li>
+				<li class="main-nav__item"><a href="./about.html">About</a></li>
+				<li class="main-nav__item dropdown">
+					<a href="#">Services</a>
+					<ul class="drop-nav">
+						<li><a href="./commercial-services.html">Commercial</a></li>
+						<li><a href="./domestic-services.html">Domestic</a></li>
+					</ul>
+				</li>
+				<li class="main-nav__item"><a href="./contact.html">Contact</a></li>
+			</ul>
+		</header>
 
-	<div class="services-selector">
-		<a href="./commercial-services.html" class="services-selector__commercial">	
-			<img src="./assets/i__commercial-icon2.svg" alt="Commercial Icon">
-			<h2>Commercial</h2>
-		</a>
-		<a href="./domestic-services.html" class="services-selector__domestic">
-			<img src="./assets/i__domestic-icon2.svg" alt="Domestic Icon">
-			<h2>Domestic</h2>
-		</a>
-	</div>
-	
-	<div class="home-content">
-		<div class="main-content">
-			<h1>Plumbing, Heating, Ventilation</h1>
-			<p>Logic mechanical services Lorem ipsum dolor sit amet, hac risus justo sociis, lorem arcu non. Consectetuer gravida, orci proin suspendisse ultricies enim convallis. In ut integer, leo vitae ut, quis turpis, ut molestie pede sagittis feugiat ornare, ultrices lorem risus nullam quam ut massa. Vitae sed neque fusce in ipsum. Lacus dui mi venenatis, venenatis amet nulla et odio cras nibh, est interdum, lorem lectus.
-			</p>
-			<p>Lorem ipsum dolor sit amet, eleifend arcu quis a faucibus est, nibh dui massa nulla blandit, mauris porttitor, orci et urna dui lacus, aliquam enim in turpis. Quisque tempus in quam sapien. In elit, est neque porttitor duis vitae, pharetra vel mauris, elit lobortis. Sollicitudin fringilla, mauris elementum vel justo posuere, ultrices ultricies vestibulum euismod. Urna nec lectus placeat sit vestibulum, semper vestibulum pharetra, arcu consequat ante varius aenean arcu, vitae blandit elementum. Pede sodales ac justo risus nisl, massa lacus natoque sem amet enim et, velit repudiandae ligula commodo, fermentum ac netus pede, per sed aliquid ligula. Quam tempor, in pulvinar eget accumsan sodales vivamus, eu integer mauris, mi sit amet turpis tincidunt ut turpis, arcu in. Habitasse vel dui interdum tellus semper, porta montes in velit proin auctor, nam quis lacinia sit amet in, etiam donec fermentum eros ac aptent. Voluptas amet eveniet torquent aliquam justo, est in adipiscing nulla nam tristique mauris.
-			</p>
-			<p> Quam tempor, in pulvinar eget accumsan sodales vivamus, eu integer mauris, mi sit amet turpis tincidunt ut turpis, arcu in. Habitasse vel dui interdum tellus semper, porta montes in velit proin auctor.
-			</p>
+		<div class="cycle-slideshow">
+			<span class="cycle-prev">&#9001;</span>
+			<span class="cycle-next">&#9002;</span>
+			<span class="cycle-pager"></span>
+			<img src="./assets/i__slider1.jpg" alt="commercial plumbing image description">
+			<img src="./assets/i__slider2.jpg" alt="commercial plumbing image description">
+			<img src="./assets/i__slider3.jpeg" alt="commercial plumbing image description">
 		</div>
-		<div class="side-content">
-			<img src="./assets/I__john.jpg" alt="Photo of company director">
-			<h4>John Labraca - Company Director</h4>
+
+		<div class="services-selector">
+			<a href="./commercial-services.html" class="services-selector__commercial">	
+				<img src="./assets/i__commercial-icon2.svg" alt="Commercial Icon">
+				<h2>Commercial</h2>
+			</a>
+			<a href="./domestic-services.html" class="services-selector__domestic">
+				<img src="./assets/i__domestic-icon2.svg" alt="Domestic Icon">
+				<h2>Domestic</h2>
+			</a>
 		</div>
+		
+		<div class="home-content">
+			<div class="main-content">
+				<h1>Plumbing, Heating, Ventilation</h1>
+				<p>Logic mechanical services Lorem ipsum dolor sit amet, hac risus justo sociis, lorem arcu non. Consectetuer gravida, orci proin suspendisse ultricies enim convallis. In ut integer, leo vitae ut, quis turpis, ut molestie pede sagittis feugiat ornare, ultrices lorem risus nullam quam ut massa. Vitae sed neque fusce in ipsum. Lacus dui mi venenatis, venenatis amet nulla et odio cras nibh, est interdum, lorem lectus.
+				</p>
+				<p>Lorem ipsum dolor sit amet, eleifend arcu quis a faucibus est, nibh dui massa nulla blandit, mauris porttitor, orci et urna dui lacus, aliquam enim in turpis. Quisque tempus in quam sapien. In elit, est neque porttitor duis vitae, pharetra vel mauris, elit lobortis. Sollicitudin fringilla, mauris elementum vel justo posuere, ultrices ultricies vestibulum euismod. Urna nec lectus placeat sit vestibulum, semper vestibulum pharetra, arcu consequat ante varius aenean arcu, vitae blandit elementum. Pede sodales ac justo risus nisl, massa lacus natoque sem amet enim et, velit repudiandae ligula commodo, fermentum ac netus pede, per sed aliquid ligula. Quam tempor, in pulvinar eget accumsan sodales vivamus, eu integer mauris, mi sit amet turpis tincidunt ut turpis, arcu in. Habitasse vel dui interdum tellus semper, porta montes in velit proin auctor, nam quis lacinia sit amet in, etiam donec fermentum eros ac aptent. Voluptas amet eveniet torquent aliquam justo, est in adipiscing nulla nam tristique mauris.
+				</p>
+				<p> Quam tempor, in pulvinar eget accumsan sodales vivamus, eu integer mauris, mi sit amet turpis tincidunt ut turpis, arcu in. Habitasse vel dui interdum tellus semper, porta montes in velit proin auctor.
+				</p>
+			</div>
+			<div class="side-content">
+				<img src="./assets/I__john.jpg" alt="Photo of company director">
+				<h4>John Labraca - Company Director</h4>
+			</div>
+		</div>
+
 	</div>
 
 	<footer>
 		<div class="footer-inner">
 			<div class="footer-inner__contact">
 				<ul>
-					<li>Tel: <a href="tel:+447956806940">07956 806 940</a></li>
-					<li>Email: <a href="mailto:info@logicmechanicalservices.co.uk">info@logicmechanialservices.co.uk</a></li>
+					<li><h4>Contact Details</h4>
+						<ul>
+							<li>Tel: <a href="tel:+447956806940">07956 806 940</a></li>
+							<li>Email: <a href="mailto:info@logicmechanicalservices.co.uk">info@logicmechanialservices.co.uk</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="footer-inner__logo">
@@ -79,9 +93,13 @@
 			</div>
 			<div class="footer-inner__registration">
 				<ul>
-					<li>VAT &#8470;: 240319833</li>
-					<li>Company &#8470;: 10143306</li>
-					<li>Gas Safe Registration &#8470;: 582764</li>
+					<li><h4>Company Information</h4>
+						<ul>
+							<li>VAT &#8470;: 240319833</li>
+							<li>Company &#8470;: 10143306</li>
+							<li>Gas Safe Registration &#8470;: 582764</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>

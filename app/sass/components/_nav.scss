@@ -1,8 +1,19 @@
+.mobile-nav-button {
+	display: none;
+}
+.nav-logo {
+	margin: 10px;
+
+	img {
+		width: 120px;
+	}
+}
 .main-nav {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	width: 40%;
+	margin-right: 5%;
 
 	@include e(item) {
 		flex-grow: 1;
@@ -41,6 +52,116 @@
 				background-color: $white;
 				border-radius: 5px;
 				z-index: 9999;
+			}
+		}
+	}
+}
+@media (max-width:767px) {
+	.nav-logo {
+		margin-left: -10%;
+	}
+	.mobile-nav-button {
+		position: absolute;
+		display: block;
+		padding: 0;
+		right: 5%;
+		top: 20px;
+		z-index: 103;
+
+		.mobile-nav-icon {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+			padding: 20px 30px;
+			width: 15px;
+			height: 15px;
+			font-size: 0;
+			cursor: pointer;
+			transition: background $nav-menu-animation-time/2;
+			float: left;
+
+			&.is-active {
+				span {
+					background: none;
+				}
+				span::before, span::after {
+					transition-delay: 0s, $nav-menu-animation-time/2;
+				}
+				span::before {
+					top: 0;
+					transform: rotate(45deg);
+				}
+				span::after {
+					bottom: 0;
+					transform: rotate(-45deg);
+				}
+			}
+			span {
+				display: block;
+				position: absolute;
+				top: 17px;
+				width: 15px;
+				height: 2px;
+				background-color: #000;
+				transition: background 0s, $nav-menu-animation-time/2;
+			}
+			span::before, span::after {
+				display: block;
+				position: absolute;
+				width: 15px;
+				height: 2px;
+				background-color: #000;
+				content: "";
+				transition-duration: $nav-menu-animation-time/2, $nav-menu-animation-time/2;
+				transition-delay: $nav-menu-animation-time/2, 0s;
+			}
+			span::before {
+				top: -4px;
+				transition-property: top, transform;
+				-webkit-transition-property: top, -webkit-transform;
+			}
+			span::after {
+				bottom: -4px;
+				transition-property: bottom, transform;
+				-webkit-transition-property: bottom, -webkit-transform;
+			}
+		}
+	}
+	.main-nav {
+		&.selected {
+			right: 0;
+		}
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: -$navigation-width;
+		padding: 60px 0 0 10px;
+		background-color: $white;
+		width: $navigation-width;
+		transition: right $nav-menu-animation-time cubic-bezier(0.46, 0.01, 0.32, 1);
+		height: 100vh;
+		z-index: 102;
+
+		@include e(item) {
+			a {
+				
+				&:hover {
+					
+				}
+			}
+		}
+		.dropdown {
+			&:hover {
+				.drop-nav {
+					padding-left: 20px;
+					position: relative;
+				}
+			}
+			.drop-nav {
+				display: none;
+				margin: 0 0 0 -10px;
+				padding: 5px 0;
 			}
 		}
 	}

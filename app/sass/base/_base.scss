@@ -16,8 +16,13 @@ body {
 	letter-spacing: 1px;
 }
 
+.page-wrapper {
+	overflow: hidden;
+	min-width: 100%;
+}
+
 // sticky footer 
-.home-content, .contact-content, .services-content, .about-content {
+.home-content, .contact-content, .services-content, .about-content, .page-wrapper {
 	flex: 1;
 }
 ul {

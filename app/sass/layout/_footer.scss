@@ -2,45 +2,136 @@ footer {
 	width: 100%;
 	height: 130px;
 	background-color: $color-primary;
+}
+.footer-inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1200px;
+	height: 100px;
+	margin: 20px auto 0;
+	color: $white;
 
-	.footer-inner {
+	@include e(contact) {
+		flex: 1;
+
+		h4 {
+			display: none;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+	@include e(logo) {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-		width: 90%;
-		max-width: 1200px;
-		height: 100px;
-		margin: 20px auto 0;
-		color: $white;
+		flex-direction: column;
+		flex: 1;
+
+		img {
+			width: 40px;
+			margin: 0 auto;
+		}
+		p {
+			font-size: 10px;
+			text-align: center;
+			margin: 10px 0;
+		}
+	}
+	@include e(registration) {
+		flex: 1;
+		text-align: right;
+
+		h4 {
+			display: none;
+		}
+	}
+}
+@media (max-width:1081px) {
+	footer {
+		height: 90px;
+	}
+	.footer-inner {
+		height: 70px;
+		margin-top: 10px;
 
 		@include e(contact) {
-			flex: 1;
-
-			a {
-				color: $white;
-				text-decoration: none;
+			h4 {
+				display: block;
+				margin-top: 0;
+				padding-top: 0;
+			}
+			ul li ul {
+				display: none;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 60px;
+				left: 4%;
+				background-color: $color-primary;
+				padding: 10px 20px 10px 1%;
+				border-radius: 3px 3px 0 0;
+				border-bottom: 2px solid $white;
+			}
+			&:hover > ul li ul {
+				display: block;
 			}
 		}
 		@include e(logo) {
-			display: flex;
-			flex-direction: column;
-			flex: 1;
-
 			img {
-				width: 40px;
-				margin: 0 auto;
-			}
-			p {
-				font-size: 12px;
-				text-align: center;
-				margin: 10px 0;
+				margin-top: 15px;
+				width: 30px;
 			}
 		}
 		@include e(registration) {
-			flex: 1;
-			text-align: right;
+			h4 {
+				display: block;
+			}
+			ul li ul {
+				display: none;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 60px;
+				right: 4%;
+				background-color: $color-primary;
+				padding: 10px 1% 10px 20px;
+				border-radius: 3px 3px 0 0;
+				border-bottom: 2px solid $white;
+			}
+			&:hover > ul li ul {
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width:561px) {
+	.footer-inner {
+		margin-top: 10px;
+
+		@include e(contact) {
+			h4 {
+				font-size: 14px;
+				text-align: center;
+			}
+			ul li ul {
+				font-size: 12px;
+				margin-bottom: 70px;
+			}
+		}
+		@include e(logo) {
+			flex: 2;
+		}
+		@include e(registration) {
+			h4 {
+				font-size: 14px;
+				text-align: center;
+			}
+			ul li ul {
+				font-size: 12px;
+				margin-bottom: 70px;
+			}
 		}
 	}
 }
