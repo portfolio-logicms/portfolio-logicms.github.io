@@ -23,7 +23,7 @@
 				margin: 5px 0 0;
 
 				a {
-					text-decoration: none;
+					text-decoration: underline;
 					color: $color-primary;
 
 					&:hover {
@@ -33,7 +33,7 @@
 			}
 		}
 	}
-	@include e(Query) {
+	@include e(query) {
 		width: 40%;
 		margin: 0 5%;
 
@@ -55,13 +55,56 @@
 		.ContactFormSubmit {
 			background-color: $white;
 		}
-
 	}
 	@include e(map) {
 		width: 25%;
+		margin-top: 50px;
 
 		iframe {
 			width: 100%;
+		}
+	}
+}
+@media (max-width:1006px) {
+	.contact-content {
+		flex-wrap: wrap;
+
+		@include e(contact-info) {
+			width: 45%;
+			padding: 0 0 0 5%;
+		}
+		@include e(query) {
+			width: 45%;
+		}
+		@include e(map) {
+			width: 100%;
+		}
+	}
+}
+@media (max-width:630px) {
+	.contact-content {
+		margin: 20px auto 50px;
+
+		@include e(contact-info) {
+			width: 80%;
+			margin: 0 auto;
+			padding: 0;
+
+			p {
+				text-align: center;
+			}
+			ul {
+				text-align: center;
+			}
+		}
+		@include e(query) {
+			width: 80%;
+			margin: 20px auto;
+		}
+		@include e(map) {
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 20px;
 		}
 	}
 }

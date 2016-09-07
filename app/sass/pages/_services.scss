@@ -3,23 +3,54 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	margin: 0 auto;
-	padding: 50px 0;
+	margin: 50px auto;
 	width: 90%;
 	max-width: 980px;
 
 	@include e(about) {
 		width: 50%;
 		margin-left:0%;
+		order: 1;
 	}
 	@include e(services) {
 		margin: 0 0 0 auto;
+		order: 2;
 
 		ul {
 			margin-left: 10px;
+			list-style-type: inherit;
+		}
+	}
+}
+@media (max-width:1000px){
+	.services-content {
+		display: inherit;
 
-			li:before {
-				content: "-";
+		@include e(about) {
+			width: 60%;
+			float: left;
+		}
+		@include e(services) {
+			float: left;
+			width: 35%;
+			padding: 0 0 5% 0;
+			margin-left: 5%;
+		}
+	}
+}
+@media (max-width:767px) {
+	.services-content {
+		margin-top: 20px;
+		
+		@include e(about) {
+			width: 100%;
+		}
+		@include e(services) {
+			width: 100%;
+			margin: 0;
+
+			ul {
+				margin-left: 20px;
 			}
 		}
 	}
