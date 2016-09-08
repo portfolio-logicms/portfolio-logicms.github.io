@@ -2,7 +2,7 @@
 	display: none;
 }
 .nav-logo {
-	margin: 10px;
+	margin: 10px 10px 10px 5%;
 
 	img {
 		width: 120px;
@@ -58,7 +58,7 @@
 }
 @media (max-width:768px) {
 	.nav-logo {
-		margin-left: -10%;
+		margin-left: 0;
 	}
 	.mobile-nav-button {
 		position: absolute;
@@ -132,6 +132,7 @@
 		&.selected {
 			right: 0;
 		}
+		margin-right: 0;
 		display: inline-block;
 		position: absolute;
 		top: 0;
